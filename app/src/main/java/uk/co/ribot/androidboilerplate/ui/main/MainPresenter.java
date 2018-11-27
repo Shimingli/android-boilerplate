@@ -44,7 +44,7 @@ public class MainPresenter extends BasePresenter<MainMvpView> {
         mDataManager.getRibots()
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeOn(Schedulers.io())
-                .subscribe(new Observer<List<Ribot>>() {
+                .subscribe(new Observer<List<Ribot>>() {  // subscribeWith 的区别
                     @Override
                     public void onSubscribe(@NonNull Disposable d) {
                         mDisposable = d;

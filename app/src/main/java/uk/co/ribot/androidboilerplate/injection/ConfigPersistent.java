@@ -8,7 +8,7 @@ import javax.inject.Scope;
 import uk.co.ribot.androidboilerplate.injection.component.ConfigPersistentComponent;
 
 /**
- * A scoping annotation to permit dependencies conform to the life of the
+ *允许相关性依赖于生命周期的范围注释。
  * {@link ConfigPersistentComponent}
  */
 @Scope
